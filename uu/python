@@ -1,1 +1,5 @@
-
+ import heapq
+  heap = [8, 3, 5, 1, 6, 2]
+  heapq.heapify(heap)  # Превращает список в кучу
+  heapq.heappush(heap, 0)  # Вставка
+  min_val = heapq.heappop(heap)  # Извлечение минимума
