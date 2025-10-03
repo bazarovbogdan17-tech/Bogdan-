@@ -1,1 +1,17 @@
+// Пример извлечения минимума из бинарной кучи на Java
 
+  public T pop() {
+
+      T ret = elts[1];
+
+      elts[1] = elts[last];
+
+      last--;
+
+      int i = 1;
+
+      // ... heapifyDown (просеивание вниз)
+
+      return ret;
+
+  }
