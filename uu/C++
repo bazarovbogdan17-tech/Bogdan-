@@ -1,1 +1,13 @@
+// Пример вставки в min-кучу на C++
 
+  template <typename T>
+
+  void MinHeap<T>::insert(T key) {
+
+      heap.push_back(key); // Добавление в конец вектора
+
+      int index = size() - 1;
+
+      heapifyUp(index); // Подъем элемента на нужную позицию
+
+  }
